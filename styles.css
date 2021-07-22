@@ -1,0 +1,355 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+:root {
+    --main-accent-color: #03bad5;
+    --selection-title-color-dark: #37474f;
+    --body-color: #495057;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+/* == ========================================= */
+/* ==             NAVIGATION SECTION         == */
+/* == ========================================= */
+
+
+nav {
+    background: #337ab7;
+    /* background-image: linear-gradient(rgba(0,0,0, 0.62), rgba(0, 0, 0, 0.55)), url("img/carousel1.jpg"); */
+    height: 80px;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    list-style-position: initial;
+    list-style-type: none;
+    position:fixed;
+}
+
+label.logo {
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+
+label.logo>img
+{
+    height: 50px;
+
+
+} 
+
+
+nav ul
+{
+    float: right;
+    margin-right: 20px;
+
+}
+
+nav ul li
+{
+display: inline-block;
+line-height: 80px;
+margin: 0 5px;
+
+}
+
+nav ul li a
+{
+    color:#fff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li  a:hover {
+    background: #69cf8b;
+    width: 100%;
+    transition: 1s;
+
+}
+
+.checkbtn {
+    font-size: 30px;
+    color:#fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+@media (max-width: 952px) {
+
+
+
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    
+
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+
+
+    .checkbtn {
+        display: block;
+    
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li {
+        font-size: 20px;
+    }
+
+    nav ul li a:hover {
+        background: none;
+        color: 0082e6;
+        background: #1b9bff;
+        transition: 1s;
+    }
+    /* nav ul li a.active, a:hover {
+        background: #1b9bff;
+        transition: 1s; */
+
+    #check:checked ~ ul{
+        left: 0;
+
+    }
+
+}
+/* == END OF NAVIGATION SECTION == */
+
+
+/* == ========================================= */
+/* ==             HERO SECTION               == */
+/* == ========================================= */
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0, 0.62), rgba(0, 0, 0, 0.55)), url("img/carousel1.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 80px);
+    /* height: 100vh; */
+
+
+}
+
+.main-section {
+width: 50%;
+line-height: 1;
+
+}
+
+.content h1 {
+    font-size: 55px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.content p {
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-top: 25px;
+    line-height: 1.5;
+    color: #fff;
+
+}
+
+.content .button {
+    margin-top: 25px;
+
+
+}
+
+.content .button a {
+font-family: sans-serif;
+font-size: 20px;
+background-color: #ff0000;
+text-transform: uppercase;
+text-decoration: none;
+padding: 12px 12px;
+color: #fff;
+letter-spacing: 1.5px;
+border-radius: 10px;
+
+}
+
+.content .button a:hover {
+    background-color: var(--main-accent-color);
+    transition:  .8s ease;
+}
+
+/* == END OF HERO SECTION == */
+
+/* == ========================================= */
+/* ==             HERO SECTION               == */
+/* == ========================================= */
+
+
+/* == END OF HERO SECTION == */
+
+
+
+
+
+/* About Section */
+#about
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+
+}
+
+
+#about button
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about-content
+{
+    padding-top: 20px;
+}
+
+.skills-bar p
+{
+margin-bottom: 6px;
+font-weight: 600;
+}
+
+.progress-bar
+{
+    border-radius: 16px;
+}
+
+.progress
+{
+    border-radius: 16px !important;
+    margin-bottom: 20px;
+}
+
+/* Services */
+
+#services
+{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../Web/img/carousel3.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#services h1
+{
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+
+}
+
+#services h1::after
+{
+content: '';
+background-color: #efefef;
+display: block;
+height: 3px;
+width: 170px;
+margin: 20px auto 5px;
+}
+
+.services
+{
+    margin-top: 40px;
+}
+
+.icon
+{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px auto;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    /* border-radius: 50%; */
+
+}
+
+
+#services p
+{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    color: #ccc;
+}
+
+.services .col-md-3:hover
+{
+    background: #294a8f;
+    cursor: pointer;
+    transition: 0.9s;
+}
